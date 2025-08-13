@@ -1,0 +1,55 @@
+# ---------------------
+# Common
+# ---------------------
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Ignore environment files (but keep sample ones)
+.env
+.env.*.local
+!*.example
+
+# ---------------------
+# Node / Angular
+# ---------------------
+node_modules/
+dist/
+tmp/
+temp/
+.cache/
+.angular/
+
+# ---------------------
+# .NET / C#
+# ---------------------
+bin/
+obj/
+out/
+Debug/
+Release/
+.vs/
+*.user
+*.suo
+*.userprefs
+*.ncrunch*
+_ReSharper*/
+*.resharper
+*.DotSettings.user
+
+# ---------------------
+# Test coverage
+# ---------------------
+coverage/
+lcov-report/
+
+# ---------------------
+# IDE / Editor settings
+# ---------------------
+.idea/
+.vscode/
+*.code-workspace
