@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Reflection.Emit;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using PurchaseOrder.Api.Entities;
 
 namespace PurchaseOrder.Api.Data
@@ -25,7 +23,7 @@ namespace PurchaseOrder.Api.Data
               .Property(p => p.TotalAmount)
               .HasPrecision(18, 2);
 
-
+              
         }
     }
 }
