@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PurchaseOrder.Api.Entities
+namespace PurchaseOrder.Domain.Entities
 {
     public enum PurchaseOrderStatus { Draft, Approved, Shipped, Completed, Cancelled }
 

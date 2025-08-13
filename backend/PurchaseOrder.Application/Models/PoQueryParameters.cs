@@ -1,6 +1,6 @@
-﻿using PurchaseOrder.Api.Entities;
+﻿using PurchaseOrder.Domain.Entities;
 
-namespace PurchaseOrder.Api.Models
+namespace PurchaseOrder.Application.Models
 {
     public class PoQueryParameters
     {

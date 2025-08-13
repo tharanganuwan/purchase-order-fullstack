@@ -1,16 +1,14 @@
-﻿using System;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
-using PurchaseOrder.Api.DTOs;
-using PurchaseOrder.Api.Entities;
-using PurchaseOrder.Api.Interfaces;
-using PurchaseOrder.Api.Models;
-using static PurchaseOrder.Api.Interfaces.IRepository;
+using PurchaseOrder.Application.DTOs;
+using PurchaseOrder.Application.Interfaces;
+using PurchaseOrder.Application.Models;
+using PurchaseOrder.Domain.Entities;
+using static PurchaseOrder.Domain.Interfaces.IRepository;
 
-namespace PurchaseOrder.Api.Services
+
+namespace PurchaseOrder.Application.Services
 {
     public class PurchaseOrderService : IPurchaseOrderService
     {

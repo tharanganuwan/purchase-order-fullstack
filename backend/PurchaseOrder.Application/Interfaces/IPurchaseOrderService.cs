@@ -1,7 +1,7 @@
-﻿using PurchaseOrder.Api.DTOs;
-using PurchaseOrder.Api.Models;
+﻿using PurchaseOrder.Application.DTOs;
+using PurchaseOrder.Application.Models;
 
-namespace PurchaseOrder.Api.Interfaces
+namespace PurchaseOrder.Application.Interfaces
 {
     public interface IPurchaseOrderService
     {

@@ -1,4 +1,4 @@
-﻿namespace PurchaseOrder.Api.Models
+﻿namespace PurchaseOrder.Application.Models
 {
     public class PagedResult<T>
     {

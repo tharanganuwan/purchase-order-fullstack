@@ -1,7 +1,7 @@
-﻿using PurchaseOrder.Api.Data;
-using static PurchaseOrder.Api.Interfaces.IRepository;
+﻿using PurchaseOrder.Infrastructure.Data;
+using static PurchaseOrder.Domain.Interfaces.IRepository;
 
-namespace PurchaseOrder.Api.Repositories
+namespace PurchaseOrder.Infrastructure.Repositories
 {
     public class Repository<T> : IRepository<T> where T : class
     {

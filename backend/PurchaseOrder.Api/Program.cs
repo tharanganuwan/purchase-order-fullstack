@@ -1,10 +1,11 @@
 using Microsoft.EntityFrameworkCore;
-using PurchaseOrder.Api.Data;
-using PurchaseOrder.Api.Interfaces;
-using PurchaseOrder.Api.Mapping;
-using PurchaseOrder.Api.Repositories;
-using PurchaseOrder.Api.Services;
-using static PurchaseOrder.Api.Interfaces.IRepository;
+using PurchaseOrder.Application.Interfaces;
+using PurchaseOrder.Application.Mapping;
+using PurchaseOrder.Application.Services;
+using PurchaseOrder.Infrastructure.Data;
+using PurchaseOrder.Infrastructure.Repositories;
+using static PurchaseOrder.Domain.Interfaces.IRepository;
+
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,7 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
-using PurchaseOrder.Api.Entities;
+﻿
 
-namespace PurchaseOrder.Api.Data
+using Microsoft.EntityFrameworkCore;
+using PurchaseOrder.Domain.Entities;
+
+namespace PurchaseOrder.Infrastructure.Data
 {
     public class AppDbContext : DbContext
     {

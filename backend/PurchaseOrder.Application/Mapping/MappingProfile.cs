@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using PurchaseOrder.Api.DTOs;
-using PurchaseOrder.Api.Entities;
+using PurchaseOrder.Application.DTOs;
+using PurchaseOrder.Domain.Entities;
 
-namespace PurchaseOrder.Api.Mapping
+namespace PurchaseOrder.Application.Mapping
 {
     public class MappingProfile : Profile
     {

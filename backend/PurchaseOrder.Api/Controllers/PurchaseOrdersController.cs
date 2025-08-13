@@ -1,9 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using PurchaseOrder.Api.DTOs;
-using PurchaseOrder.Api.Interfaces;
-using PurchaseOrder.Api.Models;
-using PurchaseOrder.Api.Services;
+﻿using Microsoft.AspNetCore.Mvc;
+using PurchaseOrder.Application.DTOs;
+using PurchaseOrder.Application.Interfaces;
+using PurchaseOrder.Application.Models;
 
 namespace PurchaseOrder.Api.Controllers
 {

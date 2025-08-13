@@ -1,4 +1,4 @@
-﻿namespace PurchaseOrder.Api.Interfaces
+﻿namespace PurchaseOrder.Domain.Interfaces
 {
     public interface IRepository
     {

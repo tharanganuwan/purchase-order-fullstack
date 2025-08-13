@@ -1,17 +1,17 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿
 
-namespace PurchaseOrder.Api.DTOs
+using PurchaseOrder.Domain.Entities;
+
+namespace PurchaseOrder.Application.DTOs
 {
-    public class CreatePoDto
+    public class PurchaseOrderDto
     {
-        [Required, MaxLength(50)]
+        public Guid Id { get; set; }
         public string PoNumber { get; set; } = string.Empty;
         public string? Description { get; set; }
-        [Required]
         public string SupplierName { get; set; } = string.Empty;
-        [Required]
         public DateTime OrderDate { get; set; }
-        [Range(0, double.MaxValue)]
         public decimal TotalAmount { get; set; }
+        public PurchaseOrderStatus Status { get; set; }
     }
 }
