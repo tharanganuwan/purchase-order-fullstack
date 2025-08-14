@@ -30,7 +30,8 @@ import { MatButtonModule } from '@angular/material/button';
 export class OrderListComponent implements OnInit {
 
 
-    supplierFilter = '';    displayedColumns: string[] = ['poNumber', 'supplierName', 'orderDate', 'totalAmount', 'status', 'actions'];
+    supplierFilter = '';    
+    displayedColumns: string[] = ['poNumber', 'supplierName', 'orderDate', 'totalAmount', 'status', 'actions'];
     dataSource: PurchaseOrder[] = [];
 
     total = 0;
