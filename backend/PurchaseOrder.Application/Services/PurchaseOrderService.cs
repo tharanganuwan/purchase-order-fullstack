@@ -100,14 +100,14 @@ namespace PurchaseOrder.Application.Services
 
                 var po = _mapper.Map<PurchaseOrders>(dto);
                 po.Status = PurchaseOrderStatus.Draft;
-                po.CreatedAt = DateTime.UtcNow;
+                po.CreatedAt = DateTime.Now;
 
                 await _repo.AddAsync(po);
                 await _repo.SaveChangesAsync();
 
                 return _mapper.Map<PurchaseOrderDto>(po);
             }
-            catch (InvalidOperationException ex) // business validation
+            catch (InvalidOperationException ex) 
             {
                 _logger.LogWarning(ex, "Business validation failed for CreateAsync");
                 throw;
@@ -131,14 +131,14 @@ namespace PurchaseOrder.Application.Services
 
                 var updatedPo = _mapper.Map(dto, po);
                 updatedPo.PoNumber = po.PoNumber;
-                updatedPo.UpdatedAt = DateTime.UtcNow;
+                updatedPo.UpdatedAt = DateTime.Now;
 
                 _repo.Update(updatedPo);
                 await _repo.SaveChangesAsync();
 
                 return _mapper.Map<PurchaseOrderDto>(updatedPo);
             }
-            catch (InvalidOperationException ex) // business validation
+            catch (InvalidOperationException ex)
             {
                 _logger.LogWarning(ex, "Business validation failed for UpdateAsync");
                 throw;
