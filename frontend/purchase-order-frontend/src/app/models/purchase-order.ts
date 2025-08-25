@@ -1,16 +1,17 @@
-export type PurchaseOrderStatus =
-  | 'Draft'
-  | 'Approved'
-  | 'Shipped'
-  | 'Completed'
-  | 'Cancelled';
+export enum PurchaseOrderStatus {
+  Draft = 0,
+  Approved = 1,
+  Shipped = 2,
+  Completed = 3,
+  Cancelled = 4
+}
 
 export interface PurchaseOrder {
   id: string;
   poNumber: string;
   description?: string;
   supplierName: string;
-  orderDate: string; // ISO date string
+  orderDate: string; 
   totalAmount: number;
   status: PurchaseOrderStatus;
 }

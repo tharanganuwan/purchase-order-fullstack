@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PoService } from '../../services/po.service';
-import { PurchaseOrder } from '../../models/purchase-order';
+import { PurchaseOrder, PurchaseOrderStatus } from '../../models/purchase-order';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
@@ -34,6 +34,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 export class OrderFormComponent implements OnInit {
   editingId?: string;
   poForm: FormGroup;
+  PurchaseOrderStatus = PurchaseOrderStatus;
 
   constructor(
     private fb: FormBuilder,

@@ -40,11 +40,11 @@
         <mat-form-field appearance="fill">
           <mat-label>Status</mat-label>
           <mat-select formControlName="status">
-            <mat-option value="0">Draft</mat-option>
-            <mat-option value="1">Approved</mat-option>
-            <mat-option value="2">Shipped</mat-option>
-            <mat-option value="3">Completed</mat-option>
-            <mat-option value="4">Cancelled</mat-option>
+            <mat-option [value]="PurchaseOrderStatus.Draft">Draft</mat-option>
+            <mat-option [value]="PurchaseOrderStatus.Approved">Approved</mat-option>
+            <mat-option [value]="PurchaseOrderStatus.Shipped">Shipped</mat-option>
+            <mat-option [value]="PurchaseOrderStatus.Completed">Completed</mat-option>
+            <mat-option [value]="PurchaseOrderStatus.Cancelled">Cancelled</mat-option>
           </mat-select>
         </mat-form-field>
       </div>

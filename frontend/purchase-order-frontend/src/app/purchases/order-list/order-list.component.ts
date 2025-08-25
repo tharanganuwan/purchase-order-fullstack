@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, inject  } from '@angular/core';
-import { PurchaseOrder } from '../../models/purchase-order';
+import { PurchaseOrder, PurchaseOrderStatus } from '../../models/purchase-order';
 import {MatPaginator, PageEvent} from '@angular/material/paginator';
 import { PoService } from '../../services/po.service';
 import { CommonModule } from '@angular/common';
@@ -40,6 +40,7 @@ export class OrderListComponent implements OnInit {
     statusFilter = '';
     fromDate?: Date;
     toDate?: Date;
+    PurchaseOrderStatus = PurchaseOrderStatus;
 
     @ViewChild(MatPaginator) paginator!: MatPaginator;
 
