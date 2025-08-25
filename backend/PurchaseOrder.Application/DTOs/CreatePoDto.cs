@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using PurchaseOrder.Domain.Entities;
 
 namespace PurchaseOrder.Application.DTOs
 {
@@ -13,5 +14,6 @@ namespace PurchaseOrder.Application.DTOs
         public DateTime OrderDate { get; set; }
         [Range(0, double.MaxValue)]
         public decimal TotalAmount { get; set; }
+        public PurchaseOrderStatus? Status { get; set; }
     }
 }

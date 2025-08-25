@@ -6,7 +6,8 @@ using PurchaseOrder.Application.DTOs;
 using PurchaseOrder.Application.Interfaces;
 using PurchaseOrder.Application.Models;
 using PurchaseOrder.Domain.Entities;
-using static PurchaseOrder.Domain.Interfaces.IRepository;
+using PurchaseOrder.Domain.Interfaces;
+
 
 namespace PurchaseOrder.Application.Services
 {

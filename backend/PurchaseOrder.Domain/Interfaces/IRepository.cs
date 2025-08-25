@@ -1,7 +1,6 @@
 ﻿namespace PurchaseOrder.Domain.Interfaces
 {
-    public interface IRepository
-    {
+    
         public interface IRepository<T> where T : class
         {
             Task<T?> GetByIdAsync(Guid id);
@@ -11,5 +10,5 @@
             IQueryable<T> Query();
             Task SaveChangesAsync();
         }
-    }
+    
 }

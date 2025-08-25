@@ -1,5 +1,5 @@
 ﻿using PurchaseOrder.Infrastructure.Data;
-using static PurchaseOrder.Domain.Interfaces.IRepository;
+using PurchaseOrder.Domain.Interfaces;
 
 namespace PurchaseOrder.Infrastructure.Repositories
 {
