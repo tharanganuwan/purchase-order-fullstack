@@ -1,0 +1,31 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# .NET
+**/bin/
+**/obj/
+**/out/
+**/Debug/
+**/Release/
+.vs/
+
+# Angular / Node
+**/node_modules/
+**/dist/
+.angular/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs / temporary files
+**/*.log
+**/*.tmp
+**/*.temp
+
+# Environment / secrets
+.env
+.env.*
+!.env.example

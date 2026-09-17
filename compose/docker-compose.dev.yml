@@ -1,0 +1,26 @@
+services:
+
+  api:
+    image: purchase-order-api:latest
+    container_name: purchase-order-api-dev
+    restart: unless-stopped
+
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+
+      ConnectionStrings__DefaultConnection: "Server=host.docker.internal,1433;Database=PurchaseOrderDb;User Id=sa;Password=tommya;MultipleActiveResultSets=true;TrustServerCertificate=True"
+
+    expose:
+      - "8080"
+
+  frontend:
+    image: purchase-order-frontend:latest
+    container_name: purchase-order-frontend-dev
+    restart: unless-stopped
+
+    ports:
+      - "4200:80"
+
+    depends_on:
+      - api
